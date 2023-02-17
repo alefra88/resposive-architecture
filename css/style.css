@@ -30,7 +30,41 @@ img,video,canvas,picture,svg,iframe,audio{
 
 */
 
-img {
+img,
+video,
+iframe {
   max-width: 100%;
   height: auto;
+}
+
+/* 
+
+              forma vieja de hacer responsivo un video 
+
+formato widescreen 16:9
+16 --> 100%
+9 --> 56.25%
+*/
+
+.responsive-media {
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /*este es el trick*/
+}
+
+.responsive-media > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+
+TECNICA NUEVA PARA HACER RESPONSIVO UN ARCHIVO IFRAME o MULTIMEDIA
+
+*/
+
+.aspect-ratio-16-9 {
+  aspect-ratio: 4/3; /*para mapas es 1/1, por ejemplo*/
 }
