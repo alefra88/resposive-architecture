@@ -1,3 +1,4 @@
+/* con esta regla seleccionamos los elementos que inicien con la palabra despues del '^=' en este caso se buscan las clases que lleven 'box' + algo */
 [class^="box"] {
   margin: 3rem auto;
   background-color: orangered;
@@ -18,4 +19,18 @@
   min-width: 280px;
   max-height: 480px;
   min-height: 280px;
+}
+
+/*
+ hacer flexible cualquier elemento multimedia con la siguiente regla:
+img,video,canvas,picture,svg,iframe,audio{
+  max-width: 100%;
+  height: auto;
+}
+
+*/
+
+img {
+  max-width: 100%;
+  height: auto;
 }

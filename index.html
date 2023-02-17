@@ -194,12 +194,43 @@
       </code></pre>
         <h3>Imágenes Responsivas</h3>
         <p>Simplemente adaptamos la imagen al tamaño de su contenedor.</p>
+        <img src="./img/puesta-sol.jpg" alt="puesta de sol" />
         <h4>Atributo <i>srcset</i> y <i>sizes</i></h4>
         <p>
           El propósito de estos atributos, es mejorar el rendimiento de carga,
           al colocar la misma imagen pero en diferentes tamaños y pesos,
           dependiendo del tamaño o la resolución de la pantalla.
         </p>
+        <img
+          src="./img/puesta-sol.jpg"
+          srcset="
+            ./img/puesta-sol.jpg 1x,
+            ./img/puesta-sol.jpg 1.5x,
+            ./img/puesta-sol.jpg 2x
+          "
+          alt="puesta de sol"
+        />
+        <img
+          src="./img/puesta-sol.jpg"
+          srcset="
+            ./img/puesta-sol.jpg  600w,
+            ./img/puesta-sol.jpg  900w,
+            ./img/puesta-sol.jpg 1200w
+          "
+          alt="puesta de sol"
+        />
+        <img
+          src="./img/puesta-sol.jpg"
+          srcset="
+            ./img/puesta-sol.jpg  600w,
+            ./img/puesta-sol.jpg  900w,
+            ./img/puesta-sol.jpg 1200w
+          "
+          sizes="(max-width: 480px)300px,"
+          alt="puesta de sol"
+        />
+        <br />
+
         <h4>Etiqueta <i>picture</i></h4>
         <p>
           El objetivo de esta etiqueta, no es sólo mostrar diferentes tamaños de
@@ -208,6 +239,15 @@
           pantalla y las diferencias en el diseño. Esto se conoce como
           "dirección de arte".
         </p>
+        <picture>
+          <source srcset="img/kitten-large.png" media="(min-width:1024px)" />
+          <source srcset="img/kitten-medium.png" media="(min-width:600px)" />
+          <img src="img/kitten-small.png" alt="kitten small" />
+        </picture>
+        <picture>
+          <source srcset="img/butterfly.webp" type="image/webp" />
+          <img src="img/butterfly.jpg" alt="imagen mariposa" />
+        </picture>
         <h3>Videos Responsivos</h3>
         <h3>Iframes Responsivos</h3>
       </article>
