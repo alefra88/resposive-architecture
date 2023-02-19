@@ -772,7 +772,7 @@
         <h3>Sintaxis</h3>
         <pre><code class="language-css">
 .card {
-  contain: layout inline-size;
+  contain: layout inline-size style;
 }
 
 @container (min-width: 600px) {
@@ -782,7 +782,16 @@
 }
       </code></pre>
         <h3>Ejemplo</h3>
-        <aside></aside>
+        <aside>
+          <article class="card">
+            <div class="card-container"><img class="image" src="img/puesta-sol.jpg" alt="">
+              <aside class="content">
+                <h4 class="card-title">card title</h4>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione inventore tempora minus iste voluptates eaque, est ut iusto pariatur, et tempore. Neque quam placeat sit quos aliquid ullam eius consectetur.</p>
+              </aside>
+            </div>
+          </article>
+        </aside>
       </article>
       <hr />
       <article id="seo" class="full-screen">

@@ -68,3 +68,34 @@ TECNICA NUEVA PARA HACER RESPONSIVO UN ARCHIVO IFRAME o MULTIMEDIA
 .aspect-ratio-16-9 {
   aspect-ratio: 4/3; /*para mapas es 1/1, por ejemplo*/
 }
+
+.card {
+  border: thin solid black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  contain: layout inline-size style;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+@container (min-width: 600px) {
+  .card-container {
+    display: flex;
+  }
+  .card-container > * {
+    width:50%;
+    flex-basis:50%;
+  }
+}
+
+
