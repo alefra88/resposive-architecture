@@ -98,4 +98,22 @@ TECNICA NUEVA PARA HACER RESPONSIVO UN ARCHIVO IFRAME o MULTIMEDIA
   }
 }
 
+   /* grid fluida */
+.fluid-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
 
+
+/* texto fluido  */
+
+
+/* utopia project */
+/* font-size:calc(12+(24-12)*((100vw-300px)/(1400-300))); */
+
+
+
+.box-fluid {
+  width: 300px;
+  height: 300px;
+}
